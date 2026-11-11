@@ -1,0 +1,42 @@
+news_01.txt: music(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:100%, aviation:0%): album:0, band:0, concert:0, guitarist:0, music:0, singer:1, song:2, songs:0
+news_02.txt: elections(football:0%, space:0%, health:0%, weather:0%, elections:100%, music:0%, aviation:0%): campaign:0, candidate:1, election:3, electoral:0, presidential:0, vote:3, voters:1, votes:0
+news_03.txt: football(football:100%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%): club:11, defender:0, fifa:0, football:3, goalkeeper:0, goals:0, league:5, midfielder:0, uefa:0
+news_04.txt: music(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:100%, aviation:0%): album:0, band:3, concert:0, guitarist:0, music:0, singer:3, song:0, songs:0
+news_05.txt: health(football:0%, space:0%, health:100%, weather:0%, elections:0%, music:0%, aviation:0%): covid:3, disease:0, health:1, infection:0, outbreak:1, pandemic:0, patients:0, vaccine:0, virus:0
+news_06.txt: UNKNOWN(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%)
+news_07.txt: music(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:100%, aviation:0%): album:0, band:0, concert:0, guitarist:0, music:1, singer:1, song:0, songs:0
+news_08.txt: health(football:0%, space:0%, health:100%, weather:0%, elections:0%, music:0%, aviation:0%): covid:3, disease:7, health:4, infection:0, outbreak:2, pandemic:0, patients:0, vaccine:0, virus:3
+news_09.txt: elections(football:0%, space:0%, health:0%, weather:0%, elections:100%, music:0%, aviation:0%): campaign:0, candidate:1, election:0, electoral:0, presidential:0, vote:0, voters:0, votes:0
+news_10.txt: space(football:0%, space:81%, health:0%, weather:0%, elections:0%, music:0%, aviation:19%): astronaut:1, launch:3, nasa:8, orbit:0, planet:0, space:31, spacecraft:0, telescope:0
+news_11.txt: aviation(football:0%, space:0%, health:0%, weather:7%, elections:0%, music:0%, aviation:93%): airbus:1, aircraft:0, airlines:0, airport:0, boeing:0, flight:5, pilot:0, plane:7, runway:0
+news_12.txt: football(football:100%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%): club:0, defender:0, fifa:2, football:1, goalkeeper:2, goals:1, league:0, midfielder:0, uefa:0
+news_13.txt: football(football:100%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%): club:6, defender:0, fifa:0, football:2, goalkeeper:0, goals:0, league:5, midfielder:0, uefa:2
+news_14.txt: elections(football:0%, space:0%, health:0%, weather:0%, elections:100%, music:0%, aviation:0%): campaign:0, candidate:1, election:3, electoral:1, presidential:2, vote:0, voters:0, votes:0
+news_15.txt: aviation(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:100%): airbus:0, aircraft:1, airlines:0, airport:3, boeing:0, flight:0, pilot:2, plane:0, runway:1
+news_16.txt: weather(football:0%, space:0%, health:0%, weather:100%, elections:0%, music:0%, aviation:0%): flooding:0, forecast:1, hurricane:0, rain:4, rainfall:2, storm:0, tropical:0, weather:0, winds:0
+news_17.txt: health(football:0%, space:0%, health:100%, weather:0%, elections:0%, music:0%, aviation:0%): covid:4, disease:0, health:0, infection:0, outbreak:2, pandemic:0, patients:1, vaccine:0, virus:8
+news_18.txt: elections(football:0%, space:0%, health:0%, weather:0%, elections:100%, music:0%, aviation:0%): campaign:0, candidate:0, election:4, electoral:0, presidential:4, vote:0, voters:0, votes:1
+news_19.txt: health(football:0%, space:0%, health:100%, weather:0%, elections:0%, music:0%, aviation:0%): covid:0, disease:2, health:1, infection:0, outbreak:1, pandemic:0, patients:0, vaccine:0, virus:1
+news_20.txt: aviation(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:100%): airbus:0, aircraft:3, airlines:0, airport:1, boeing:0, flight:0, pilot:0, plane:0, runway:0
+news_21.txt: health(football:0%, space:0%, health:100%, weather:0%, elections:0%, music:0%, aviation:0%): covid:0, disease:0, health:3, infection:1, outbreak:0, pandemic:0, patients:0, vaccine:0, virus:0
+news_22.txt: elections(football:0%, space:0%, health:0%, weather:0%, elections:100%, music:0%, aviation:0%): campaign:0, candidate:0, election:5, electoral:0, presidential:0, vote:3, voters:0, votes:0
+news_23.txt: weather(football:0%, space:0%, health:0%, weather:100%, elections:0%, music:0%, aviation:0%): flooding:0, forecast:0, hurricane:0, rain:0, rainfall:0, storm:0, tropical:1, weather:3, winds:0
+news_24.txt: weather(football:0%, space:0%, health:0%, weather:100%, elections:0%, music:0%, aviation:0%): flooding:0, forecast:1, hurricane:7, rain:1, rainfall:0, storm:2, tropical:3, weather:0, winds:1
+news_25.txt: weather(football:0%, space:0%, health:0%, weather:100%, elections:0%, music:0%, aviation:0%): flooding:0, forecast:0, hurricane:0, rain:1, rainfall:0, storm:0, tropical:0, weather:1, winds:0
+news_26.txt: football(football:100%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%): club:5, defender:0, fifa:0, football:2, goalkeeper:0, goals:2, league:3, midfielder:0, uefa:1
+news_27.txt: music(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:100%, aviation:0%): album:0, band:0, concert:0, guitarist:0, music:0, singer:2, song:0, songs:0
+news_28.txt: space(football:0%, space:89%, health:0%, weather:0%, elections:0%, music:0%, aviation:11%): astronaut:0, launch:2, nasa:7, orbit:0, planet:1, space:21, spacecraft:0, telescope:0
+news_29.txt: elections(football:0%, space:0%, health:20%, weather:0%, elections:80%, music:0%, aviation:0%): campaign:3, candidate:0, election:1, electoral:0, presidential:0, vote:0, voters:0, votes:0
+news_30.txt: UNKNOWN(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%)
+news_31.txt: music(football:0%, space:0%, health:0%, weather:0%, elections:0%, music:100%, aviation:0%): album:1, band:0, concert:0, guitarist:0, music:2, singer:4, song:5, songs:1
+news_32.txt: weather(football:0%, space:0%, health:0%, weather:100%, elections:0%, music:0%, aviation:0%): flooding:1, forecast:0, hurricane:2, rain:0, rainfall:0, storm:6, tropical:3, weather:1, winds:1
+news_33.txt: space(football:0%, space:92%, health:0%, weather:0%, elections:0%, music:0%, aviation:8%): astronaut:3, launch:1, nasa:1, orbit:0, planet:0, space:6, spacecraft:0, telescope:0
+news_34.txt: space(football:0%, space:100%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%): astronaut:0, launch:0, nasa:2, orbit:0, planet:6, space:1, spacecraft:1, telescope:0
+news_35.txt: football(football:100%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%): club:0, defender:1, fifa:0, football:1, goalkeeper:3, goals:0, league:0, midfielder:0, uefa:0
+news_36.txt: football(football:100%, space:0%, health:0%, weather:0%, elections:0%, music:0%, aviation:0%): club:5, defender:0, fifa:0, football:1, goalkeeper:0, goals:2, league:0, midfielder:3, uefa:0
+news_37.txt: health(football:0%, space:0%, health:85%, weather:0%, elections:15%, music:0%, aviation:0%): covid:0, disease:2, health:1, infection:0, outbreak:3, pandemic:0, patients:0, vaccine:5, virus:0
+news_38.txt: aviation(football:0%, space:0%, health:15%, weather:0%, elections:0%, music:0%, aviation:85%): airbus:0, aircraft:4, airlines:0, airport:2, boeing:1, flight:5, pilot:2, plane:0, runway:3
+news_39.txt: space(football:0%, space:90%, health:0%, weather:0%, elections:0%, music:0%, aviation:10%): astronaut:1, launch:9, nasa:2, orbit:0, planet:0, space:14, spacecraft:0, telescope:0
+news_40.txt: weather(football:0%, space:0%, health:0%, weather:100%, elections:0%, music:0%, aviation:0%): flooding:2, forecast:0, hurricane:0, rain:1, rainfall:0, storm:2, tropical:0, weather:0, winds:0
+Attention: the following non txt file has been detected: nothing_wordfile.docx
+Attention: the following non txt file has been detected: photo_moon_darkside.png

@@ -1,0 +1,18 @@
+<section id="altnested" data-transition="fade" style="background:#F7F6F2;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2F5BD3">Alternative, written and tested</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1">d_frequencies as a nested list</h2>
+<div style="display:flex;flex-direction:row;gap:48px">
+<div style="width:960px;background:#14213D;border-radius:16px;padding:32px 40px">
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35;color:#E6EAF2">def Count_Frequencies_List(l_words, l_kw_lists):<br>&#160;&#160;&#160;&#160;l_freq = []<br>&#160;&#160;&#160;&#160;for i in range(len(l_kw_lists)):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l_freq.append([0] * len(l_kw_lists[i]))<br>&#160;&#160;&#160;&#160;for word in l_words:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;for i in range(len(l_kw_lists)):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;for j in range(len(l_kw_lists[i])):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if l_kw_lists[i][j] == word:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l_freq[i][j] += 1<br>&#160;&#160;&#160;&#160;return l_freq</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;line-height:1.4">news_01, category music:</p>
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35">['singer', 'music', 'band', 'song', …]<br>[1, 0, 0, 2, 0, 0, 0, 0]</p>
+<p style="font-size:28px;line-height:1.4"><b>Same counts</b> as d_frequencies (checked).</p>
+<p style="font-size:28px;line-height:1.4"><b>+</b> only lists: no dictionaries needed.</p>
+<p style="font-size:28px;line-height:1.4"><b>−</b> a third loop to find each keyword, and the numbers mean nothing without the keyword list next to them.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7388">Project 1 · Document Classification · 15</p>
+<aside>Member A. This is the statement’s own example of an alternative: a nested list instead of a dictionary. Each category is a row and each keyword a column, so l_freq[i][j] is how many times keyword j of category i appears. We wrote it and checked it against our dictionary version on news_01: the music row is 1 for singer and 2 for song, the same counts. The advantage is that it uses only lists. The disadvantages are that we need a third loop to find the keyword, where the set answered directly, and that the numbers are meaningless unless you keep the list of keywords next to them, while the dictionary carries the keyword name with its count.</aside>
+</section>

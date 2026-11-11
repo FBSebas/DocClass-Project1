@@ -1,0 +1,16 @@
+<section id="ex3" data-transition="fade" style="background:#F7F6F2;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2F5BD3">Exercise 3</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1">Document_Reader(filename)</h2>
+<div style="display:flex;flex-direction:row;gap:48px">
+<div style="width:820px;background:#14213D;border-radius:16px;padding:32px 40px">
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35;color:#E6EAF2">def Document_Reader(filename):<br>&#160;&#160;&#160;&#160;text = Read_Text_File(filename)<br>&#160;&#160;&#160;&#160;clean = ""<br>&#160;&#160;&#160;&#160;for c in text:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if c.isalnum():<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;clean = clean + c.lower()<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;else:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;clean = clean + " "<br>&#160;&#160;&#160;&#160;l_words = clean.split()<br>&#160;&#160;&#160;&#160;return l_words</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;line-height:1.4">Letters and digits are <b>kept</b> (lowercase); <b>any other character</b> becomes a space.</p>
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35">NASA-team couldn't<br>→ "nasa team couldn t"<br>→ ['nasa', 'team', 'couldn', 't']</p>
+<p style="font-size:28px;line-height:1.4">The statement’s list of separators ends in “etc.”, so we define what a word <b>is</b> (isalnum) instead of listing separators.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7388">Project 1 · Document Classification · 6</p>
+<aside>Member B. A word is a sequence of letters or digits; everything else separates. We go through the text character by character: letters and digits go into a new string in lowercase, any other character becomes a space. Then split cuts at the spaces, and several separators in a row do not create empty words. With the statement’s example sentence we get exactly its 23 words, including couldn and t, and 15, year and old from 15-year-old.</aside>
+</section>

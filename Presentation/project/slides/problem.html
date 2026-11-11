@@ -1,0 +1,15 @@
+<section id="problem" data-transition="fade" style="background:#F7F6F2;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2F5BD3">The problem</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1">Which topic is each article about?</h2>
+<p style="font-size:30px;line-height:1.4;color:#3E4A61">For every article we count how many times the keywords of each category appear. If one category has <b>more than 50 %</b> of all the keyword occurrences, that is the article’s topic; otherwise it is <b>UNKNOWN</b>.</p>
+<table style="font-size:28px;color:#14213D">
+<tr><th style="width:8%">Ex.</th><th style="width:34%">Function</th><th style="width:28%">Receives</th><th style="width:30%">Returns</th></tr>
+<tr><td>2</td><td>Read_Categories_Keywords</td><td>keywords file name</td><td>l_categories, l_keywords</td></tr>
+<tr><td>3</td><td>Document_Reader</td><td>one news file</td><td>l_words</td></tr>
+<tr><td>4</td><td>Count_Frequencies</td><td>words + categories</td><td>d_frequencies</td></tr>
+<tr><td>5</td><td>Classify_Doc</td><td>d_frequencies</td><td>d_votes, doc_category</td></tr>
+<tr><td>6</td><td>main</td><td>file + folder names</td><td>the two output .txt files</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7388">Project 1 · Document Classification · 2</p>
+<aside>Member A. The input is a folder with 40 news articles in txt and a keywords file with 7 categories. The program is a pipeline: Exercise 2 reads the categories, and then for each article Exercise 3 extracts its words, Exercise 4 counts the keywords, Exercise 5 decides the category, and the main program, Exercise 6, writes the results. Exercise 1 is the welcome message.</aside>
+</section>

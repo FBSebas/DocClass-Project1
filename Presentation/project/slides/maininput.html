@@ -1,0 +1,16 @@
+<section id="maininput" data-transition="fade" style="background:#F7F6F2;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2F5BD3">Exercise 6 · steps 1–4</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1">Main: ask until the input is valid</h2>
+<div style="display:flex;flex-direction:row;gap:48px">
+<div style="width:1100px;background:#14213D;border-radius:16px;padding:32px 40px">
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35;color:#E6EAF2">DocClass_Welcome()<br>l_categories = []<br>while len(l_categories) == 0:<br>&#160;&#160;&#160;&#160;keywords_file = input("Enter the name of ...: ")<br>&#160;&#160;&#160;&#160;try:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l_categories, l_keywords = \<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Read_Categories_Keywords(keywords_file)<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if len(l_categories) == 0:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print("Error: the file contains no data.")<br>&#160;&#160;&#160;&#160;except FileNotFoundError:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print("Error: the file does not exist.")<br>folder_name = input("Enter the name of the folder ...: ")<br>while not Folder_Has_Txt(folder_name):<br>&#160;&#160;&#160;&#160;print("Error: ...")<br>&#160;&#160;&#160;&#160;folder_name = input("Enter the name of the folder ...: ")</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;line-height:1.4">“Ask again until valid” = a <b>validation while</b>.</p>
+<p style="font-size:28px;line-height:1.4">File: missing (<b>FileNotFoundError</b>) or empty (no categories).</p>
+<p style="font-size:28px;line-height:1.4">Folder: <b>Folder_Has_Txt</b> searches for the first txt file and stops there.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7388">Project 1 · Document Classification · 9</p>
+<aside>Member B. The main follows the statement’s steps. After the welcome, the keywords file is asked until it is valid. There are two ways to be invalid: the file does not exist, which arrives as FileNotFoundError from our reading function, or it has no data, which arrives as an empty list. One while covers both, because its condition is simply that we have no categories yet. The folder is asked the same way; our helper Folder_Has_Txt checks that it is a folder and searches for a txt file inside, stopping at the first one it finds.</aside>
+</section>

@@ -1,0 +1,17 @@
+<section id="readtext" data-transition="fade" data-section="The code, function by function" style="background:#F7F6F2;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2F5BD3">Helper function · Ex. 1</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1">Reading a file in two encodings</h2>
+<div style="display:flex;flex-direction:row;gap:48px">
+<div style="width:900px;background:#14213D;border-radius:16px;padding:32px 40px">
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35;color:#E6EAF2">def Read_Text_File(filename):<br>&#160;&#160;&#160;&#160;try:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;f = open(filename, "r", encoding="utf-8")<br>&#160;&#160;&#160;&#160;except:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;raise FileNotFoundError<br>&#160;&#160;&#160;&#160;try:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text = f.read()<br>&#160;&#160;&#160;&#160;except UnicodeDecodeError:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;f.close()<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;f = open(filename, "r",<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;encoding="windows-1252")<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;text = f.read()<br>&#160;&#160;&#160;&#160;f.close()<br>&#160;&#160;&#160;&#160;return text</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;line-height:1.4">36 news files are UTF-8; <b>news_01, 10, 18 and 26</b> are Windows-1252.</p>
+<p style="font-size:28px;line-height:1.4">Reading those as UTF-8 raises <b>UnicodeDecodeError</b>, so we reopen them as Windows-1252.</p>
+<p style="font-size:28px;line-height:1.4">A file that can’t be opened raises <b>FileNotFoundError</b>, the statement’s model.</p>
+<p style="font-size:28px;line-height:1.4">Written once, used by Ex. 2 and Ex. 3. Ex. 1 (DocClass_Welcome) only prints the message, copied exactly.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7388">Project 1 · Document Classification · 4</p>
+<aside>Member A. Exercise 1 is a procedure with no parameters that prints the welcome message exactly as the statement writes it. Before the exercises we wrote one helper, because Exercises 2 and 3 both need to open a text file. Opening and reading are two different moments: opening fails if the file does not exist, reading fails if the encoding is wrong. Four of the forty articles are Windows-1252, so we try UTF-8 first and reopen with Windows-1252 if we get UnicodeDecodeError, as the hints of the statement suggest.</aside>
+</section>

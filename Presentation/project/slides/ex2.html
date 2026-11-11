@@ -1,0 +1,19 @@
+<section id="ex2" data-transition="fade" style="background:#F7F6F2;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2F5BD3">Exercise 2</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1">Read_Categories_Keywords(filename)</h2>
+<div style="display:flex;flex-direction:row;gap:48px">
+<div style="width:960px;background:#14213D;border-radius:16px;padding:32px 40px">
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35;color:#E6EAF2">def Read_Categories_Keywords(filename):<br>&#160;&#160;&#160;&#160;l_categories = []<br>&#160;&#160;&#160;&#160;l_keywords = []<br>&#160;&#160;&#160;&#160;text = Read_Text_File(filename)<br>&#160;&#160;&#160;&#160;for line in text.split("\n"):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if ":" in line:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;parts = line.split(":")<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l_name = parts[0].split()<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if len(l_name) &gt; 0:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l_categories.append(l_name[0].lower())<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;l_keywords.append(<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;set(parts[1].lower().split()))<br>&#160;&#160;&#160;&#160;return l_categories, l_keywords</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:26px;font-weight:600;color:#2F5BD3">One line, step by step</p>
+<p style="font-family:'JetBrains Mono', monospace;font-size:24px;line-height:1.35;color:#14213D">"space: planet orbit nasa&#160;&#160;"</p>
+<p style="font-size:26px;line-height:1.35">split(":") → ['space', ' planet orbit nasa&#160;&#160;']</p>
+<p style="font-size:26px;line-height:1.35">parts[0].split() → ['space']</p>
+<p style="font-size:26px;line-height:1.35">parts[1].split() → ['planet', 'orbit', 'nasa']</p>
+<p style="font-size:26px;line-height:1.35">split() with no argument cuts at <b>1 or more spaces</b> and ignores the ones at the end.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7388">Project 1 · Document Classification · 5</p>
+<aside>Member A. We read the whole file and cut it into lines. A line with a colon has the category on the left and the keywords on the right. split without arguments solves the two difficulties the statement mentions: keywords separated by one or more spaces, and lines that end with spaces. The category and its set are appended at the same time, so both lists stay parallel. Everything is lowered because the documents are compared in lowercase. Empty lines have no colon and are skipped.</aside>
+</section>

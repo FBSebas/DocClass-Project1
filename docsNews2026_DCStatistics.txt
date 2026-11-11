@@ -1,0 +1,22 @@
+*** Statistics
+Total txt files: 40
+football: 15.00%
+space: 12.50%
+health: 15.00%
+weather: 15.00%
+elections: 15.00%
+music: 12.50%
+aviation: 10.00%
+UNKNOWN: 5.00%
+
+*** Top 10 keywords
+space: 73
+club: 27
+flight: 23
+nasa: 20
+election: 16
+launch: 15
+league: 13
+health: 12
+virus: 12
+covid: 11

@@ -1,0 +1,7 @@
+football: football fifa uefa club goals league goalkeeper midfielder defender
+space: nasa space orbit planet spacecraft telescope astronaut launch
+health: health covid virus vaccine disease outbreak infection pandemic patients
+weather: storm weather winds flooding rain hurricane rainfall tropical forecast
+elections: election vote votes candidate voters presidential electoral campaign
+music: singer music band song album songs concert guitarist
+aviation: flight aircraft airport plane pilot airlines boeing airbus runway
