@@ -2,13 +2,14 @@
 
 | File | What it is |
 |---|---|
-| `DocumentClassification.py` | **the file to upload to Caronte** (put both names and NIUs at the top first) |
+| `DocumentClassification.py` | **the file to upload to Caronte**: names/NIU + one short comment per function and main step (the statement makes comments mandatory). Put both names and NIUs at the top first |
+| `DocumentClassification_exam_style.py` | the same code with only the names/NIU comments, for studying exam-style (same output) |
+| `Presentation - Document Classification.pdf` | **the presentation to upload to Caronte** (17 slides; put both names on slides 1 and 17) |
 | `Proj1-DocClass_2026_27.pdf` | the statement |
 | `keywords_2026.txt`, `docsNews2026/` | the input data |
 | `docsNews2026_DocClassification.txt`, `docsNews2026_DCStatistics.txt` | the output of running the program on that data |
 | `Study/GUIDE - Project 1 step by step.pdf` | how every piece of the code works, how to run it, how to rebuild it from scratch |
-| `Study/DocumentClassification_exam_style.py` | same code without comments, for studying (don't upload it) |
-| `Presentation/` | source of the presentation slides (one HTML file per slide, with speaker notes for Member A / Member B) |
+| `Presentation/` | source of the slides: one HTML file per slide, with the speaker notes (what Member A / Member B say) in the `<aside>` at the end of each |
 
 **Run it:** open a terminal in this folder, `python3 DocumentClassification.py`, then type `keywords_2026.txt` and `docsNews2026`.
 

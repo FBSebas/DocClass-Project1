@@ -1,3 +1,6 @@
+# Name Surname - NIU XXXXXXX
+# Name Surname - NIU XXXXXXX
+
 import os
 
 
@@ -126,10 +129,8 @@ def Line_Of_Document(file_name, d_votes, doc_category, d_frequencies):
 
 
 if __name__ == "__main__":
-    # 1. Welcome
     DocClass_Welcome()
 
-    # 2-3. Keywords file (re-ask until valid)
     l_categories = []
     while len(l_categories) == 0:
         keywords_file = input("Enter the name of the keywords file: ")
@@ -140,7 +141,6 @@ if __name__ == "__main__":
         except FileNotFoundError:
             print("Error: the file does not exist.")
 
-    # 4. Folder (re-ask until valid)
     folder_name = input("Enter the name of the folder with the documents: ")
     while not Folder_Has_Txt(folder_name):
         print("Error: the folder does not exist or contains no txt files.")
@@ -158,7 +158,6 @@ if __name__ == "__main__":
         for keyword in keywords:
             d_keyword_totals[keyword] = 0
 
-    # 5. Classify every file
     out = open(base_name + "_DocClassification.txt", "w", encoding="utf-8")
     for file_name in sorted(os.listdir(folder_name)):
         file_path = os.path.join(folder_name, file_name)
@@ -184,7 +183,6 @@ if __name__ == "__main__":
                 out.write("Attention: the following non txt file has been detected: " + file_name + "\n")
     out.close()
 
-    # 6. Statistics
     stats = open(base_name + "_DCStatistics.txt", "w", encoding="utf-8")
     stats.write("*** Statistics\n")
     stats.write("Total txt files: " + str(total_txt) + "\n")
