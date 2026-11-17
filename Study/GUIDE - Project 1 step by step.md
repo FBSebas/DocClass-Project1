@@ -592,7 +592,6 @@ Enter the name of the keywords file: keywords.txt
 Error: the file does not exist.
 Enter the name of the keywords file: keywords_2026.txt
 Enter the name of the folder with the documents: docsNews2026
-Done: files docsNews2026_DocClassification.txt and docsNews2026_DCStatistics.txt have been created.
 ```
 4. The two output files appear next to the script. Running it again overwrites them (`"w"`).
 
